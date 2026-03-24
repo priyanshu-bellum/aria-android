@@ -1,0 +1,13 @@
+package com.aria.data.local.entities
+
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+import java.util.UUID
+
+@Entity(tableName = "notes")
+data class Note(
+    @PrimaryKey val id: String = UUID.randomUUID().toString(),
+    val text: String,
+    val source: String,       // "voice" | "telegram" | "manual"
+    val createdAt: Long = System.currentTimeMillis()
+)
