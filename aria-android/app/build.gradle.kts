@@ -89,9 +89,6 @@ dependencies {
     implementation(libs.moshi)
     ksp(libs.moshi.codegen)
 
-    // YAML
-    implementation(libs.snakeyaml)
-
     // Security (encrypted storage)
     implementation(libs.security.crypto)
 

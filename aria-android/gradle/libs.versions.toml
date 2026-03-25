@@ -14,7 +14,6 @@ coroutines = "1.9.0"
 security-crypto = "1.1.0-alpha06"
 splashscreen = "1.0.1"
 hilt-navigation = "1.2.0"
-snakeyaml = "2.3"
 livekit = "2.12.1"
 vosk = "0.3.47"
 junit = "4.13.2"
@@ -63,9 +62,6 @@ okhttp-sse = { group = "com.squareup.okhttp3", name = "okhttp-sse", version.ref 
 # JSON
 moshi = { group = "com.squareup.moshi", name = "moshi-kotlin", version.ref = "moshi" }
 moshi-codegen = { group = "com.squareup.moshi", name = "moshi-kotlin-codegen", version.ref = "moshi" }
-
-# YAML
-snakeyaml = { group = "org.yaml", name = "snakeyaml", version.ref = "snakeyaml" }
 
 # Security
 security-crypto = { group = "androidx.security", name = "security-crypto", version.ref = "security-crypto" }

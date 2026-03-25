@@ -11,7 +11,6 @@ import com.aria.data.local.dao.TodoDao
 import com.aria.data.memory.Mem0ApiClient
 import com.aria.data.memory.Mem0Repository
 import com.aria.data.repository.SecureStorage
-import com.aria.picoclaw.ConfigWriter
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module
@@ -95,10 +94,4 @@ object AppModule {
         todoDao: TodoDao
     ): PromptBuilder = PromptBuilder(mem0Repository, todoDao)
 
-    @Provides
-    @Singleton
-    fun provideConfigWriter(
-        @ApplicationContext context: Context,
-        secureStorage: SecureStorage
-    ): ConfigWriter = ConfigWriter(context, secureStorage)
 }

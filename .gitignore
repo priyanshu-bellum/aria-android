@@ -28,9 +28,9 @@ aria-android/app/src/main/assets/picoclaw-arm64
 aria-android/app/src/main/assets/vosk-model-small-en-in-0.4/
 aria-android/vosk-model-small-en-in-0.4/
 
-# PicoClaw source binary at project root
-picoclaw
-picoclaw-linux-arm64
+# PicoClaw source binary at project root (leading / = root only, not the Kotlin package)
+/picoclaw
+/picoclaw-linux-arm64
 
 # OS
 .DS_Store
