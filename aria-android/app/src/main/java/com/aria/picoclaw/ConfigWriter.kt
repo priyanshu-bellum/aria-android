@@ -22,7 +22,7 @@ class ConfigWriter @Inject constructor(
         val mem0Key = secureStorage.getApiKey(SecureStorage.KEY_MEM0_API) ?: ""
         val mem0UserId = secureStorage.getApiKey(SecureStorage.KEY_MEM0_USER_ID) ?: "aria-user"
         val telegramToken = secureStorage.getApiKey(SecureStorage.KEY_TELEGRAM_BOT_TOKEN)
-        val composioKey = secureStorage.getApiKey(SecureStorage.KEY_COMPOSIO_API_KEY)
+        val composioKey = secureStorage.getApiKey(SecureStorage.KEY_COMPOSIO_API)
         val logsDir = File(context.filesDir, "logs").also { it.mkdirs() }
 
         val config = buildString {

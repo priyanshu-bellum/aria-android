@@ -3,7 +3,7 @@ package com.aria.data.claude
 import com.aria.data.claude.models.ClaudeMessageContent
 import com.aria.data.claude.models.ClaudeRequest
 import com.aria.data.claude.models.ClaudeResponse
-import com.aria.data.claude.models.StreamDelta
+import com.aria.data.claude.models.StreamEvent
 import com.aria.data.repository.SecureStorage
 import com.squareup.moshi.Moshi
 import kotlinx.coroutines.Dispatchers
