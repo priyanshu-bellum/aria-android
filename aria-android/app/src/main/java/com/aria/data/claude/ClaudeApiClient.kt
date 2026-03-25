@@ -104,9 +104,10 @@ class ClaudeApiClient(
                     val data = l.removePrefix("data: ").trim()
                     if (data == "[DONE]") break
                     try {
-                        val event = moshi.adapter(StreamDelta::class.java).fromJson(data)
-                        if (event?.text?.isNotEmpty() == true) {
-                            onChunk(event.text)
+                        val event = moshi.adapter(StreamEvent::class.java).fromJson(data)
+                        val text = event?.delta?.text
+                        if (!text.isNullOrEmpty()) {
+                            onChunk(text)
                         }
                     } catch (_: Exception) {
                         // Skip malformed events

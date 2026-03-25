@@ -165,7 +165,7 @@ class OnboardingViewModel @Inject constructor(
                     append("\"messages\": [")
                     _chatMessages.value.forEachIndexed { index, (role, content) ->
                         if (index > 0) append(",")
-                        append("{\"role\": \"$role\", \"content\": ${content.replace("\"", "\\\"")}}")
+                        append("{\"role\": \"$role\", \"content\": \"${content.replace("\"", "\\\"")}\"}")
                     }
                     append("]}")
                 }
